@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCuke" project="CucumberBasics" tests="16" started="16" failures="0" errors="0" ignored="5">
+  <testsuite name="RunCuke" time="0.038">
+    <testsuite name="Feature: Login" time="0.024">
+      <testsuite name="Scenario Outline: In order to verify login to facebook.com" time="0.024">
+        <testsuite name="Examples:" time="0.024">
+          <testsuite name="| valid | valid | should |" time="0.011">
+            <testcase name="Given user navigates to facebook website" classname="| valid | valid | should |" time="0.004"/>
+            <testcase name="When user validates to homepage title" classname="| valid | valid | should |" time="0.004"/>
+            <testcase name="Then user entered &quot;valid&quot; username" classname="| valid | valid | should |" time="0.001"/>
+            <testcase name="Then user entered &quot;valid&quot; password" classname="| valid | valid | should |" time="0.001"/>
+            <testcase name="Then user &quot;should&quot; successfully logged in" classname="| valid | valid | should |" time="0.001"/>
+          </testsuite>
+          <testsuite name="| invalid | invalid | should not |" time="0.006">
+            <testcase name="Given user navigates to facebook website" classname="| invalid | invalid | should not |" time="0.001"/>
+            <testcase name="When user validates to homepage title" classname="| invalid | invalid | should not |" time="0.001"/>
+            <testcase name="Then user entered &quot;invalid&quot; username" classname="| invalid | invalid | should not |" time="0.001"/>
+            <testcase name="Then user entered &quot;invalid&quot; password" classname="| invalid | invalid | should not |" time="0.002"/>
+            <testcase name="Then user &quot;should not&quot; successfully logged in" classname="| invalid | invalid | should not |" time="0.001"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: Login to production" time="0.0">
+      <testsuite name="Scenario: In order to verify login to &quot;facebook.com&quot;" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given user navigates to facebook website" classname="Scenario: In order to verify login to &quot;facebook.com&quot;" time="0.0"/>
+        <testcase name="When user validates to homepage &quot;title&quot;" classname="Scenario: In order to verify login to &quot;facebook.com&quot;" time="0.0" ignored="true"/>
+        <testcase name="Then user entered the &quot;username&quot;" classname="Scenario: In order to verify login to &quot;facebook.com&quot;" time="0.0" ignored="true"/>
+        <testcase name="And user entered the &quot;password&quot;" classname="Scenario: In order to verify login to &quot;facebook.com&quot;" time="0.0" ignored="true"/>
+        <testcase name="And user validates the &quot;captcha&quot; image" classname="Scenario: In order to verify login to &quot;facebook.com&quot;" time="0.0" ignored="true"/>
+        <testcase name="Then &quot;user&quot; should be successfully logged in" classname="Scenario: In order to verify login to &quot;facebook.com&quot;" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

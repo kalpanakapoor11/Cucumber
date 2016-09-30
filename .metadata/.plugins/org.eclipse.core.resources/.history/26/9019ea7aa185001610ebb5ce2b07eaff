@@ -1,0 +1,36 @@
+package Steps;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class BackofficeLogin {
+	
+	@Given("^I am on the homepage of ec(\\d+)-(\\d+)-(\\d+)-(\\d+)-(\\d+)\\.us-west-(\\d+)\\.compute\\.amazonaws\\.com/admin of WBU website$")
+	public void i_am_on_the_homepage_of_ec_us_west_compute_amazonaws_com_admin_of_WBU_website(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) throws Throwable {
+	   
+	}
+
+	@When("^I get the Title of the page$")
+	public void i_get_the_Title_of_the_page() throws Throwable {
+	    
+	}
+
+	@Then("^user entered username username$")
+	public void user_entered_username_username() throws Throwable {
+	    
+	}
+
+	@Then("^user entered password password$")
+	public void user_entered_password_password() throws Throwable {
+	    
+	}
+
+	@Then("^user logintype successfully logged in$")
+	public void user_logintype_successfully_logged_in() throws Throwable {
+	    
+	}
+
+	
+
+}

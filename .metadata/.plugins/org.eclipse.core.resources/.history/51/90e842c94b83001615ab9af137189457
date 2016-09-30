@@ -1,0 +1,34 @@
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginStep {
+	@Given("^user navigates to \"([a-zA-Z]{1,})\" website$")
+	public void user_navigates_to_facebook_website(String WebsiteName ) throws Throwable {
+		System.out.println("@Given: User Navigates to "+WebsiteName+"");
+	}
+
+	@When("^user validates to homepage $")
+	public void user_validates_to_homepage_title() throws Throwable {
+		System.out.println("@When:User validates to homepage ");
+	}
+
+	@Then("^user entered the \"([a-zA-Z]{1,})\" username $")
+	public void user_entered_the_username(String Valid) throws Throwable {
+		System.out.println("@Then: user enter the "+Valid+" username");
+	}
+
+	@Then("^user entered the \"([a-zA-Z]{1,})\" password $")
+	public void user_entered_the_password(String valid) throws Throwable {
+		System.out.println("Then: user enter the "+valid+" password");
+		
+	}
+
+	@Then("^user \"([a-zA-Z]{1,})\" successfully logged in$")
+	public void user_should_be_successfully_logged_in(String ValidatedUser) throws Throwable {
+		System.out.println("@Then "+ValidatedUser+" should be successfully logged in");
+	}
+
+
+}

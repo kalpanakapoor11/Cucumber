@@ -1,0 +1,28 @@
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginStep {
+	@Given("^User navigates to facebook website^")
+	public void User_navigates_to_facebook_website(){
+		
+	}
+	
+	@When("^User validates the homepage title^")
+	public void User_validates_the_homepage_title(){
+		
+	}
+	@Then ("^User entered the username^")
+	public void User_entered_the_username(){
+		
+	}
+	@And ("^User enter the password^")
+	public void User_enter_the_password(){
+		
+	}
+	@Then("^User should be successfully logged in^")
+	public void User_should_be_successfully_logged_in(){
+		
+	}
+}

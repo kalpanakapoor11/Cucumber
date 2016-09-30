@@ -1,0 +1,28 @@
+Feature: Validation of WBU backoffice login page
+In order to validage login page
+as a backoffice user
+I navigate to ec2-52-88-243-186.us-west-2.compute.amazonaws.com/admin
+
+Scenario: Validate login page
+
+Background:
+
+		Given I am on the homepage of ec2-52-88-243-186.us-west-2.compute.amazonaws.com/admin of WBU website
+		When I get the Title of the page
+
+		
+
+Scenario Outline: In order to verify login to facebook.com
+ 		Then user entered "<username>" username
+ 		Then user entered "<password>" password 
+ 		And user selects the age category
+ 		|Age		|Location	|
+ 		|below 18	|India		|
+ 		|above 18	|USA		|
+ 		Then user "<logintype>" successfully logged in
+ 		
+Examples:
+|username	|password	|logintype	|
+|valid		|valid		|should		|
+|invalid	|invalid	|should not	|
+
