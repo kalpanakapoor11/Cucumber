@@ -1,0 +1,6 @@
+
+Examples:
+		|username	|password	|logintype	|
+		|300_hqadmin|wbu@1234	|should		|
+		|300_Noadmin|wbu@1234	|should not	|
+ 		

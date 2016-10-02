@@ -1,35 +1,34 @@
+
 package Steps;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import base.TestBase;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class BackofficeLogin extends TestBase{
-		
+public class BackofficeLogin{
 	
-@Given("^I am on the homepage of wbu website$")
-public void i_am_on_the_homepage_of_wbu_website() throws Throwable {
-		System.out.println("Hello");
-	   // driver.get("http://ec2-52-88-243-186.us-west-2.compute.amazonaws.com/admin");
-	}
-
-
-	@When("^I get the Title of the page$")
-	public void i_get_the_Title_of_the_page() throws Throwable {
-	    
-	     
-	}@Before()
+	public static WebDriver driver;
+	public static Properties OR= new Properties();
+	public static Properties config=new Properties();
+	public static FileInputStream fis;
+	public static Logger log=Logger.getLogger("devpinoyLogger");
+	//public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Credentials.xlsx");
+	
+	@Before()
 	public void setup() throws IOException{
 		if(driver==null){
 			fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\OR.properties");
@@ -56,6 +55,7 @@ public void i_am_on_the_homepage_of_wbu_website() throws Throwable {
 			}
 			log.debug("Navigated to"+config.getProperty("url"));
 			driver.get(config.getProperty("url"));
+			
 			driver.manage().timeouts().implicitlyWait(15L,TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//DBManager.setMysqlDbConnection();
@@ -64,26 +64,59 @@ public void i_am_on_the_homepage_of_wbu_website() throws Throwable {
 		
 	}
 	
-	@After()
+	/*@After()
 	public void teardown(){
 		driver.quit();
 	}
+*/
+		
+	
+@Given("^I am on the homepage of wbu website$")
+public void i_am_on_the_homepage_of_wbu_website() throws Throwable {
+	log.debug(driver.getTitle());
+	
+	log.debug("Inside login test");
+	
+	}
 
-	@Then("^user entered \"([^\"]*)\" username$")
-	public void user_entered_username(String user) throws Throwable {
-	    
+
+	@When("^I get the Title of the page$")
+	public void i_get_the_Title_of_the_page() throws Throwable {
+	System.out.println("driver.getTitle()");    
 	     
 	}
+	@Then("^user entered \"([^\"]*)\" username$")
+	public void user_entered_username(String user) throws Throwable {
+		driver.manage().timeouts().implicitlyWait(15L,TimeUnit.SECONDS);
+		
+		driver.findElement(By.name(OR.getProperty("uname"))).sendKeys(user);
+		
+		}
+	
+
 
 	@Then("^user entered \"([^\"]*)\" password$")
 	public void user_entered_password(String pass) throws Throwable {
-	    
-	     
+		driver.manage().timeouts().implicitlyWait(15L,TimeUnit.SECONDS);
+		driver.findElement(By.name(OR.getProperty("pword"))).sendKeys(pass);
+		
+		  
 	}
 
+	
+/*@Parameters
+	
+	public static Object[][] getData(){
+		
+	return testutil.getData("Credentials");		
+	}
+*/
 	@Then("^user \"([^\"]*)\" successfully logged in$")
 	public void user_successfully_logged_in(String logintype) throws Throwable {
-	    
+		driver.manage().timeouts().implicitlyWait(15L,TimeUnit.SECONDS);
+		driver.findElement(By.xpath(OR.getProperty("login"))).click();
+		log.debug("login successfully");
+
 	     
 	}
 

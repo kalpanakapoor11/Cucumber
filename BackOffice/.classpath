@@ -46,5 +46,6 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/User1/Documents/Tools/Selenium Webdriver Tutorial Basics+Advanced+Interview Guide/selenium-java-2.53.1/selenium-2.53.1/libs/testng-6.9.9.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
