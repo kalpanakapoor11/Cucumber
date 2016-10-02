@@ -1,0 +1,17 @@
+@smoke
+Feature: Validation of WBU backoffice user type
+In order to validage user type
+as a backoffice user
+I navigate to wbu backoffice landing page.
+
+Scenario Outline: In order to verify backoffice user type
+ 		Given I am on the landing page of wbu website
+		When I get the Title text of the page
+ 		Then I compare the "<title>" with expected title
+ 		And  I verify the backoffice user type.
+
+Examples:
+		|title   |
+		|HQ_ADMIN|
+				
+		

@@ -1,0 +1,5 @@
+#Login Test
+
+uname=userName
+pword=password
+login=/html/body/backoffice/div/div[2]/md-content/div[2]/login/div/div/md-card/md-card-content/form/div/div[2]/button/span[1]

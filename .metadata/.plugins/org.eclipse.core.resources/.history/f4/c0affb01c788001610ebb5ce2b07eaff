@@ -1,0 +1,18 @@
+@smoke
+Feature: Validation of WBU backoffice login page
+In order to validage Landing page
+as a backoffice user
+I navigate login to wbu.com
+
+Scenario Outline: In order to verify login type on wbu.com
+ 		Given I am on the landing page of wbu website
+		Then I compare the user title with expected "<usertitle>" and confirm the usertype.
+ 		
+Examples:
+		|usertitle	|
+		|HQ_ADMIN	|
+		
+
+		
+				
+		

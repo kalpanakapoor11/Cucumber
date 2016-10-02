@@ -1,0 +1,67 @@
+
+package Steps;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Base.Base;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class BackofficeLogin extends Base {
+
+	@Given("^I am on the homepage of wbu website$")
+	public void i_am_on_the_homepage_of_wbu_website() throws Throwable {
+
+		// System.out.println(driver.getCurrentUrl());
+
+		// log.debug(driver.getTitle());
+
+		// log.debug("Inside login test");
+
+	}
+
+	@When("^I get the Title of the page$")
+	public void i_get_the_Title_of_the_page() throws Throwable {
+		driver.manage().timeouts().implicitlyWait(15L, TimeUnit.SECONDS);
+		System.out.println(driver.getTitle());
+	}
+
+	@Then("^user entered \"([^\"]*)\" username$")
+	public void user_entered_username(String user) throws Throwable {
+		driver.manage().timeouts().implicitlyWait(15L, TimeUnit.SECONDS);
+		driver.findElement(By.name(OR.getProperty("uname"))).sendKeys(user);
+
+	}
+
+	@Then("^user entered \"([^\"]*)\" password$")
+	public void user_entered_password(String pass) throws Throwable {
+		// driver.manage().timeouts().implicitlyWait(15L,TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(
+				"pword")))); /*
+								 * examining the xpath for a search box
+								 */
+		driver.findElement(By.xpath(OR.getProperty("pword"))).sendKeys(pass);
+		// driver.findElement(By.name(OR.getProperty("pword"))).sendKeys(pass);
+	}
+
+	/*
+	 * @Parameters
+	 * 
+	 * public static Object[][] getData(){
+	 * 
+	 * return testutil.getData("Credentials"); }
+	 */
+	@Then("^user \"([^\"]*)\" successfully logged in$")
+	public void user_successfully_logged_in(String logintype) throws Throwable {
+		driver.manage().timeouts().implicitlyWait(15L, TimeUnit.SECONDS);
+		driver.findElement(By.xpath(OR.getProperty("login"))).click();
+		log.debug("login successfully");
+	}
+
+}
