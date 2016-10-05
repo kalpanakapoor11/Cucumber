@@ -32,20 +32,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/DMI Project &amp; documents/WildBird/Automation/Cucumber Jars/cucumber-core-1.2.5.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="D:/DMI Project &amp; documents/WildBird/Automation/Cucumber Jars/cucumber-junit-1.2.5.jar"/>
-	<classpathentry kind="lib" path="D:/DMI Project &amp; documents/WildBird/Automation/Cucumber Jars/cucumber-java-1.2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User1/Documents/Tools/Selenium Webdriver Tutorial Basics+Advanced+Interview Guide/selenium-java-2.53.1/selenium-2.53.1/selenium-java-2.53.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User1/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.1/selenium-ie-driver-2.53.1.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-ie-driver"/>
-			<attribute name="maven.version" value="2.53.1"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/User1/Documents/Tools/Selenium Webdriver Tutorial Basics+Advanced+Interview Guide/selenium-java-2.53.1/selenium-2.53.1/libs/testng-6.9.9.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

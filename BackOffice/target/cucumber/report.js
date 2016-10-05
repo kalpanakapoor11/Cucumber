@@ -72,10 +72,6 @@ formatter.examples({
   ],
   "keyword": "Examples"
 });
-formatter.before({
-  "duration": 8130902046,
-  "status": "passed"
-});
 formatter.scenario({
   "line": 16,
   "name": "In order to validate wbu home page and login function",
@@ -121,19 +117,9 @@ formatter.step({
   "name": "I should be successfully logged in",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "BackofficeLogin.i_am_on_the_homepage_of_wbu_website()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 144087189,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BackofficeLogin.i_get_the_Title_of_the_page()"
-});
-formatter.result({
-  "duration": 41751401,
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.match({});
 formatter.result({
@@ -147,8 +133,8 @@ formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.after({
-  "duration": 1181105617,
-  "status": "passed"
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

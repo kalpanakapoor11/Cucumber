@@ -762,3 +762,19 @@
 2016-10-02 23:17:11,853 [Worker-520] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-10-02 23:17:11,854 [Worker-520] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-10-02 23:17:11,855 [Worker-520] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2016-10-03 23:30:25,354 [Worker-575] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-03 23:30:26,687 [Worker-575] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-03 23:30:26,869 [Worker-575] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-03 23:30:26,889 [Worker-575] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-04 19:04:45,704 [Worker-584] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-04 19:04:45,870 [Worker-584] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-04 19:04:45,871 [Worker-584] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-04 19:04:45,873 [Worker-584] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2016-10-04 19:08:25,475 [Worker-588] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-04 19:08:25,477 [Worker-588] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-04 19:08:25,479 [Worker-588] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-04 19:08:25,481 [Worker-588] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2016-10-04 19:09:17,046 [Worker-586] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\DMI Project & documents\WildBird\AutomationMobile\BackOffice
+2016-10-04 19:09:17,046 [Worker-586] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2016-10-04 19:09:37,419 [Worker-588] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\DMI Project & documents\WildBird\AutomationMobile\BackOffice
+2016-10-04 19:09:37,419 [Worker-588] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test

@@ -1,9 +1,0 @@
-import cucumber.api.java.en.Given;
-
-public class LoginStep {
-	
-	@Given("User navigates to facebook website")
-	public void User_navigates_to_facebook_website(){
-		
-	}
-}

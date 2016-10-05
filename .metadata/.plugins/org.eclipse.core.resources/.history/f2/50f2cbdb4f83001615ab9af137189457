@@ -1,9 +1,0 @@
-import cucumber.api.java.en.Then;
-
-public class LoginProductionStep {
-	@Then("^user validates the \"([^\"]*)\" image$")
-	public void user_validates_the_captcha_image(String CaptchaImage) throws Throwable {
-		System.out.println("@Then validates the "+CaptchaImage+"");
-		
-	}
-}

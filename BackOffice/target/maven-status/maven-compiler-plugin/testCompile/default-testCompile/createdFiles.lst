@@ -1,2 +1,3 @@
-Steps\BackofficeLogin.class
-Runner\RunCuke.class
+runner\Steps.class
+steps\LandingPage.class
+steps\BackofficeLogin.class
