@@ -1,4 +1,4 @@
-package steps;
+package com.wbu.bo.stepDefinition;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
